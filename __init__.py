@@ -5,6 +5,7 @@ except ImportError:
 
 ModuleVersion = None
 
+#Based on https://github.com/pmgagne/tkinterdnd2
 
 def enable(interpreter):
     """Imports the module to the provided Tk/Tcl interpreter"""
