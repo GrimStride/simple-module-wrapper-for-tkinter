@@ -18,7 +18,7 @@ def enable(interpreter):
         if platform.system() in supported: pass
         else: raise RuntimeError('Platform not supported.')
         
-        module_path = os.path.join(os.path.dirname(__file__), 'extrafont')
+        module_path = os.path.join(os.path.dirname(__file__), 'module_name_here')
         interpreter.tk.call('lappend', 'auto_path', module_path)
        ModuleVersion = interpreter.tk.call('package', 'require', 'module_name_here')
     except tkinter.TclError:
